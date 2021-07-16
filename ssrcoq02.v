@@ -28,7 +28,7 @@ Lemma symmetry : forall x y : T, x = y -> y = x.
 Proof.
   move=> x y exy.
   rewrite exy. (* x を y に書き換える *)
-  done. (* 反射率で終わらせる *)
+  done. (* 反射律で終わらせる *)
   Restart. by move=> x y ->. (* => の後ろなら -> で書き換えられる *)
 Qed.
 
